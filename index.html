@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brawlhallah Roaster</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1 class="logo">BH <span>ROASTER</span></h1>
+        <ul>
+          <li>
+            <!-- <a href="#"><button class="secondary">xyz</button></a> -->
+          </li>
+          <li>
+            <a href="https://github.com/theanasify" target="_blank"
+              ><button class="primary">@theanasify</button></a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="heroSection" id="heroSection">
+        <h2>Enter Player Id</h2>
+        <form class="input" id="input">
+          <input
+            class="inputId"
+            id="inputId"
+            minlength="4"
+            maxlength="15"
+            type="text"
+            inputmode="numeric"
+            pattern="[0-9]*"
+            placeholder="e.g. 137xxx39"
+          />
+          <!-- <div> -->
+          <button class="primary" type="submit">Search</button>
+          <!-- <button class="secondary">AI Roast🔥</button> -->
+          <!-- </div> -->
+        </form>
+      </div>
+
+      <div id="playerNotFound" class="playerNotFound toggle">
+        <p>404</p>
+        <p>Player Not Found</p>
+      </div>
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 10px;
+        "
+      >
+        <h2>Player Stats:</h2>
+      </div>
+
+      <div id="playerIdSection" class="playerIdSection">
+        <div class="playerCard" id="playerCard">
+          <div class="playerContent">
+            <h3 class="name">@theanasify</h3>
+            <p class="bhId">ID: 137292939</p>
+          </div>
+
+          <div class="stats">
+            <div class="section1">
+              <p>Level: 61</p>
+              <p>XP: 200,380</p>
+              <p>Games: 876</p>
+            </div>
+
+            <div class="section2">
+              <p>Wins: 466</p>
+              <p>Loss: 410</p>
+              <p>Win Rate: 53.21%</p>
+            </div>
+          </div>
+          <div class="winRateGraph">
+            <div class="win"></div>
+            <div class="loss"></div>
+          </div>
+        </div>
+      </div>
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 10px;
+        "
+      >
+        <h2>Top 5 Legends</h2>
+      </div>
+      <div class="playerTopLegends" id="playerTopLegends">
+        <div class="legendCard">
+          <img
+            class="legendPfp"
+            src="https://i.pinimg.com/736x/a8/c7/ae/a8c7ae3b3999c28c4c8bf3c4b0545ba8.jpg"
+            alt="Legend Name"
+          />
+
+          <div class="legend-info">
+            <h3 class="legend-name">Legend: Orion</h3>
+            <div class="legend-stats">
+              <p>Games: 1127</p>
+              <p>Wins: 655</p>
+              <p>Win Rate: 58.1%</p>
+              <p>KOs:</p>
+              <p>Spear KOs: 400</p>
+              <p>Lance KOs: 255</p>
+              <p>Falls: 100</p>
+              <p>Suicides: 25</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="legendCard">
+          <img
+            class="legendPfp"
+            src="https://i.pinimg.com/736x/a8/c7/ae/a8c7ae3b3999c28c4c8bf3c4b0545ba8.jpg"
+            alt="Legend Name"
+          />
+
+          <div class="legend-info">
+            <h3 class="legend-name">Legend: Orion</h3>
+            <div class="legend-stats">
+              <p>Games: 1127</p>
+              <p>Wins: 655</p>
+              <p>Win Rate: 58.1%</p>
+              <p>KOs:</p>
+              <p>Spear KOs: 400</p>
+              <p>Lance KOs: 255</p>
+              <p>Falls: 100</p>
+              <p>Suicides: 25</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="legendCard">
+          <img
+            class="legendPfp"
+            src="https://i.pinimg.com/736x/a8/c7/ae/a8c7ae3b3999c28c4c8bf3c4b0545ba8.jpg"
+            alt="Legend Name"
+          />
+
+          <div class="legend-info">
+            <h3 class="legend-name">Legend: Orion</h3>
+            <div class="legend-stats">
+              <p>Games: 1127</p>
+              <p>Wins: 655</p>
+              <p>Win Rate: 58.1%</p>
+              <p>KOs:2000</p>
+              <p>Spear KOs: 400</p>
+              <p>Lance KOs: 255</p>
+              <p>Falls: 100</p>
+              <p>Suicides: 25</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="legendCard">
+          <img
+            class="legendPfp"
+            src="https://i.pinimg.com/736x/a8/c7/ae/a8c7ae3b3999c28c4c8bf3c4b0545ba8.jpg"
+            alt="Legend Name"
+          />
+
+          <div class="legend-info">
+            <h3 class="legend-name">Legend: Orion</h3>
+            <div class="legend-stats">
+              <p>Games: 1127</p>
+              <p>Wins: 655</p>
+              <p>Win Rate: 58.1%</p>
+              <p>KOs:</p>
+              <p>Spear KOs: 400</p>
+              <p>Lance KOs: 255</p>
+              <p>Falls: 100</p>
+              <p>Suicides: 25</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="scripts.js"></script>
+  </body>
+</html>
