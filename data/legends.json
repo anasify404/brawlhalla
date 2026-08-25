@@ -1,0 +1,494 @@
+{
+  "legends": [
+    {
+      "legend_id": 3,
+      "legend_name": "BODVAR",
+      "weapon_one": "Hammer",
+      "weapon_two": "Sword",
+      "legend_src": "https://i.pinimg.com/736x/4c/5e/7b/4c5e7bcadb64ac1f52fd940928cde428.jpg"
+    },
+    {
+      "legend_id": 4,
+      "legend_name": "CASSIDY",
+      "weapon_one": "Pistol",
+      "weapon_two": "Hammer",
+      "legend_src": "https://i.pinimg.com/736x/d3/4e/57/d34e575090f41b40e2de1252135a1a95.jpg"
+    },
+    {
+      "legend_id": 5,
+      "legend_name": "ORION",
+      "weapon_one": "RocketLance",
+      "weapon_two": "Spear",
+      "legend_src": "https://i.pinimg.com/736x/ec/ea/4e/ecea4e900dca7f3e50a37c7473efb3e4.jpg"
+    },
+    {
+      "legend_id": 6,
+      "legend_name": "LORD VRAXX",
+      "weapon_one": "RocketLance",
+      "weapon_two": "Pistol",
+      "legend_src": "https://i.pinimg.com/736x/27/fe/49/27fe497be880fd3787f0e481675873c5.jpg"
+    },
+    {
+      "legend_id": 7,
+      "legend_name": "GNASH",
+      "weapon_one": "Hammer",
+      "weapon_two": "Spear",
+      "legend_src": "https://i.pinimg.com/736x/30/9a/93/309a930b0a983c925a252f3f4b3cad78.jpg"
+    },
+    {
+      "legend_id": 8,
+      "legend_name": "QUEEN NAI",
+      "weapon_one": "Spear",
+      "weapon_two": "Katar",
+      "legend_src": "https://i.pinimg.com/736x/7c/1d/c8/7c1dc8858d4685cabd103ba27cbddff0.jpg"
+    },
+    {
+      "legend_id": 10,
+      "legend_name": "HATTORI",
+      "weapon_one": "Sword",
+      "weapon_two": "Spear",
+      "legend_src": "https://i.pinimg.com/736x/e7/41/ca/e741caf9af7416b0535643bbaf0d0807.jpg"
+    },
+    {
+      "legend_id": 11,
+      "legend_name": "SIR ROLAND",
+      "weapon_one": "RocketLance",
+      "weapon_two": "Sword",
+      "legend_src": "https://i.pinimg.com/736x/ad/4c/64/ad4c6424781a749a4481461cb898ac7a.jpg"
+    },
+    {
+      "legend_id": 12,
+      "legend_name": "SCARLET",
+      "weapon_one": "Hammer",
+      "weapon_two": "RocketLance",
+      "legend_src": "https://i.pinimg.com/736x/33/90/e7/3390e768645205deab9ee7ff3434edcc.jpg"
+    },
+    {
+      "legend_id": 13,
+      "legend_name": "THATCH",
+      "weapon_one": "Sword",
+      "weapon_two": "Pistol",
+      "legend_src": "https://i.pinimg.com/736x/be/b1/ca/beb1ca3abd8a7f354022533f086faf7c.jpg"
+    },
+    {
+      "legend_id": 14,
+      "legend_name": "ADA",
+      "weapon_one": "Pistol",
+      "weapon_two": "Spear",
+      "legend_src": "https://i.pinimg.com/736x/d5/93/75/d593758617b95b52ac811ba762103680.jpg"
+    },
+    {
+      "legend_id": 15,
+      "legend_name": "SENTINEL",
+      "weapon_one": "Hammer",
+      "weapon_two": "Katar",
+      "legend_src": "https://i.pinimg.com/736x/f3/6f/a2/f36fa22781fde3d2e8adb644156f237e.jpg"
+    },
+    {
+      "legend_id": 9,
+      "legend_name": "LUCIEN",
+      "weapon_one": "Katar",
+      "weapon_two": "Pistol",
+      "legend_src": "https://i.pinimg.com/736x/ae/75/3b/ae753b85eae5bbea20dd36343bba2fca.jpg"
+    },
+    {
+      "legend_id": 16,
+      "legend_name": "TEROS",
+      "weapon_one": "Axe",
+      "weapon_two": "Hammer",
+      "legend_src": "https://i.pinimg.com/736x/42/ba/93/42ba930b74185f5e69644325bc1c7bd3.jpg"
+    },
+    {
+      "legend_id": 19,
+      "legend_name": "BRYNN",
+      "weapon_one": "Axe",
+      "weapon_two": "Spear",
+      "legend_src": "https://i.pinimg.com/736x/90/af/35/90af356d7410fbba4506fbc37b541660.jpg"
+    },
+    {
+      "legend_id": 20,
+      "legend_name": "ASURI",
+      "weapon_one": "Katar",
+      "weapon_two": "Sword",
+      "legend_src": "https://i.pinimg.com/736x/03/32/76/033276ca8941b8e9c1db3692fa9e5beb.jpg"
+    },
+    {
+      "legend_id": 21,
+      "legend_name": "BARRAZA",
+      "weapon_one": "Axe",
+      "weapon_two": "Pistol",
+      "legend_src": "https://i.pinimg.com/736x/17/4c/74/174c74a35d1ddb66e08f2f9094c00237.jpg"
+    },
+    {
+      "legend_id": 18,
+      "legend_name": "EMBER",
+      "weapon_one": "Bow",
+      "weapon_two": "Katar",
+      "legend_src": "https://i.pinimg.com/736x/9d/99/a6/9d99a6296473d2dd50a7e2acd8b512c8.jpg"
+    },
+    {
+      "legend_id": 23,
+      "legend_name": "AZOTH",
+      "weapon_one": "Bow",
+      "weapon_two": "Axe",
+      "legend_src": "https://i.pinimg.com/736x/21/62/1b/21621bfe5c463f38c2633b085b18b1da.jpg"
+    },
+    {
+      "legend_id": 24,
+      "legend_name": "KOJI",
+      "weapon_one": "Bow",
+      "weapon_two": "Sword",
+      "legend_src": ""
+    },
+    {
+      "legend_id": 22,
+      "legend_name": "ULGRIM",
+      "weapon_one": "Axe",
+      "weapon_two": "RocketLance",
+      "legend_src": "https://i.pinimg.com/736x/41/18/63/411863475dddbb61e73eb10f620f87de.jpg"
+    },
+    {
+      "legend_id": 25,
+      "legend_name": "DIANA",
+      "weapon_one": "Bow",
+      "weapon_two": "Pistol",
+      "legend_src": "https://i.pinimg.com/736x/13/ef/bd/13efbdc0a42d5389db6af1d82025de81.jpg"
+    },
+    {
+      "legend_id": 26,
+      "legend_name": "JHALA",
+      "weapon_one": "Axe",
+      "weapon_two": "Sword",
+      "legend_src": "https://i.pinimg.com/736x/4b/fb/da/4bfbdafa006a57e7f5162f055e53a24d.jpg"
+    },
+    {
+      "legend_id": 28,
+      "legend_name": "KOR",
+      "weapon_one": "Fists",
+      "weapon_two": "Hammer",
+      "legend_src": "https://i.pinimg.com/736x/52/09/e3/5209e3cf662ba991dd90bba1c883de0c.jpg"
+    },
+    {
+      "legend_id": 29,
+      "legend_name": "WU SHANG",
+      "weapon_one": "Fists",
+      "weapon_two": "Spear",
+      "legend_src": "https://i.pinimg.com/736x/23/f2/55/23f255aa90e71488453e55e66d1190a4.jpg"
+    },
+    {
+      "legend_id": 30,
+      "legend_name": "VAL",
+      "weapon_one": "Fists",
+      "weapon_two": "Sword",
+      "legend_src": "https://i.pinimg.com/736x/93/69/1a/93691ac24025f95ea2cdd3e45f6dcacd.jpg"
+    },
+    {
+      "legend_id": 31,
+      "legend_name": "RAGNIR",
+      "weapon_one": "Katar",
+      "weapon_two": "Axe",
+      "legend_src": "https://i.pinimg.com/736x/f8/82/7d/f8827d4e3b69cac2429f792bb32d3e43.jpg"
+    },
+    {
+      "legend_id": 32,
+      "legend_name": "CROSS",
+      "weapon_one": "Pistol",
+      "weapon_two": "Fists",
+      "legend_src": "https://i.pinimg.com/736x/7c/2a/5c/7c2a5c1a562cd17160acb65bc91ad6ba.jpg"
+    },
+    {
+      "legend_id": 33,
+      "legend_name": "MIRAGE",
+      "weapon_one": "Scythe",
+      "weapon_two": "Spear",
+      "legend_src": "https://i.pinimg.com/736x/a5/04/a5/a504a58d83097acafe5335f7c023c716.jpg"
+    },
+    {
+      "legend_id": 34,
+      "legend_name": "NIX",
+      "weapon_one": "Scythe",
+      "weapon_two": "Pistol",
+      "legend_src": "https://i.pinimg.com/736x/ea/d5/75/ead575bb75221c7e3f5da5107be5559e.jpg"
+    },
+    {
+      "legend_id": 35,
+      "legend_name": "MORDEX",
+      "weapon_one": "Scythe",
+      "weapon_two": "Fists",
+      "legend_src": "https://i.pinimg.com/736x/47/e8/0b/47e80b5dd64205c93da23fa385f2899e.jpg"
+    },
+    {
+      "legend_id": 36,
+      "legend_name": "YUMIKO",
+      "weapon_one": "Bow",
+      "weapon_two": "Hammer",
+      "legend_src": "https://i.pinimg.com/736x/1c/7b/4d/1c7b4dbab7b74d83a32091f14220a243.jpg"
+    },
+    {
+      "legend_id": 37,
+      "legend_name": "ARTEMIS",
+      "weapon_one": "RocketLance",
+      "weapon_two": "Scythe",
+      "legend_src": "https://i.pinimg.com/736x/88/68/4e/88684e533fd0aae2b6e389f9621ecb55.jpg"
+    },
+    {
+      "legend_id": 38,
+      "legend_name": "CASPIAN",
+      "weapon_one": "Fists",
+      "weapon_two": "Katar",
+      "legend_src": "https://i.pinimg.com/736x/49/b3/68/49b3681939a78ca7f02da6d8d7635382.jpg"
+    },
+    {
+      "legend_id": 39,
+      "legend_name": "SIDRA",
+      "weapon_one": "Cannon",
+      "weapon_two": "Sword",
+      "legend_src": "https://i.pinimg.com/736x/2d/eb/ab/2debabe4f8b85139136830d440b424a4.jpg"
+    },
+    {
+      "legend_id": 40,
+      "legend_name": "XULL",
+      "weapon_one": "Cannon",
+      "weapon_two": "Axe",
+      "legend_src": "https://i.pinimg.com/736x/23/58/98/23589809224daa89b7e7f385ce01959e.jpg"
+    },
+    {
+      "legend_id": 42,
+      "legend_name": "KAYA",
+      "weapon_one": "Spear",
+      "weapon_two": "Bow",
+      "legend_src": "https://i.pinimg.com/736x/6a/c7/4e/6ac74e2193ea74f2b232efe431ff2f55.jpg"
+    },
+    {
+      "legend_id": 41,
+      "legend_name": "ISAIAH",
+      "weapon_one": "Cannon",
+      "weapon_two": "Pistol",
+      "legend_src": "https://i.pinimg.com/736x/21/6f/40/216f408c39a3b8e05388cdc313c3ebed.jpg"
+    },
+    {
+      "legend_id": 43,
+      "legend_name": "JIRO",
+      "weapon_one": "Sword",
+      "weapon_two": "Scythe",
+      "legend_src": "https://i.pinimg.com/736x/ba/43/0a/ba430a78129e2a935e10909b2a99f38d.jpg"
+    },
+    {
+      "legend_id": 44,
+      "legend_name": "LIN FEI",
+      "weapon_one": "Katar",
+      "weapon_two": "Cannon",
+      "legend_src": "https://i.pinimg.com/736x/08/15/56/0815564f4a4d11a696237838b7926759.jpg"
+    },
+    {
+      "legend_id": 45,
+      "legend_name": "ZARIEL",
+      "weapon_one": "Fists",
+      "weapon_two": "Bow",
+      "legend_src": "https://i.pinimg.com/736x/68/54/d1/6854d1fded24347886ccc67987f5f1c7.jpg"
+    },
+    {
+      "legend_id": 46,
+      "legend_name": "RAYMAN",
+      "weapon_one": "Fists",
+      "weapon_two": "Axe",
+      "legend_src": "https://i.pinimg.com/736x/9e/18/24/9e182494214e48a9c94053fb75e7787b.jpg"
+    },
+    {
+      "legend_id": 47,
+      "legend_name": "DUSK",
+      "weapon_one": "Spear",
+      "legend_src": "https://i.pinimg.com/736x/60/f8/99/60f899bca39bd8f108a82dbcadfff382.jpg"
+    },
+    {
+      "legend_id": 48,
+      "legend_name": "FAIT",
+      "weapon_one": "Scythe",
+      "weapon_two": "Orb",
+      "legend_src": "https://i.pinimg.com/736x/64/fe/69/64fe6935468edaeeec537aa80d3b7b98.jpg"
+    },
+    {
+      "legend_id": 49,
+      "legend_name": "THOR",
+      "weapon_one": "Hammer",
+      "weapon_two": "Orb",
+      "legend_src": "https://i.pinimg.com/736x/e5/f1/a1/e5f1a1b85bf4a2067c1e9ea6fc1057d1.jpg"
+    },
+    {
+      "legend_id": 50,
+      "legend_name": "PETRA",
+      "weapon_one": "Fists",
+      "weapon_two": "Orb",
+      "legend_src": "https://i.pinimg.com/736x/9f/67/8c/9f678cbb6365a75986eb5646dc29f6a8.jpg"
+    },
+    {
+      "legend_id": 51,
+      "legend_name": "VECTOR",
+      "weapon_one": "RocketLance",
+      "weapon_two": "Bow",
+      "legend_src": "https://i.pinimg.com/736x/bc/47/99/bc4799e8dc4e3d979226306439e582d2.jpg"
+    },
+    {
+      "legend_id": 52,
+      "legend_name": "VOLKOV",
+      "weapon_one": "Axe",
+      "weapon_two": "Scythe",
+      "legend_src": "https://i.pinimg.com/736x/59/67/4d/59674d8aead788957503b063d0347f26.jpg"
+    },
+    {
+      "legend_id": 53,
+      "legend_name": "ONYX",
+      "weapon_one": "Fists",
+      "weapon_two": "Cannon",
+      "legend_src": "https://i.pinimg.com/736x/29/d3/2e/29d32e075f7c6b05d6072d1e77c54768.jpg"
+    },
+
+    {
+      "legend_id": 54,
+      "legend_name": "JAEYUN",
+      "weapon_one": "Sword",
+      "weapon_two": "Greatsword",
+      "legend_src": "https://i.pinimg.com/736x/bf/fb/5a/bffb5abf39b24bb195995195832cb9ec.jpg"
+    },
+    {
+      "legend_id": 55,
+      "legend_name": "MAKO",
+      "weapon_one": "Katar",
+      "weapon_two": "Greatsword",
+      "legend_src": "https://i.pinimg.com/736x/6a/4d/65/6a4d657dd12890ff87bd1b6c3b41a164.jpg"
+    },
+    {
+      "legend_id": 56,
+      "legend_name": "MAGYAR",
+      "weapon_one": "Hammer",
+      "weapon_two": "Greatsword",
+      "legend_src": "https://i.pinimg.com/736x/48/d0/cc/48d0ccfbc8b118242ebe04c7fa8ea210.jpg"
+    },
+    {
+      "legend_id": 57,
+      "legend_name": "RENO",
+      "weapon_one": "Pistol",
+      "weapon_two": "Orb",
+      "legend_src": "https://i.pinimg.com/736x/fa/a0/16/faa01619d982b19ce74b88f5313df779.jpg"
+    },
+    {
+      "legend_id": 58,
+      "legend_name": "MUNIN",
+      "weapon_one": "Bow",
+      "weapon_two": "Scythe",
+      "legend_src": "https://i.pinimg.com/736x/d6/61/bc/d661bc4c4a5bc593e1db768f055ff5c1.jpg"
+    },
+    {
+      "legend_id": 59,
+      "legend_name": "ARCADIA",
+      "weapon_one": "Spear",
+      "weapon_two": "Greatsword",
+      "legend_src": "https://i.pinimg.com/736x/05/ab/a3/05aba37c1667502ddadb86c7ffc02044.jpg"
+    },
+    {
+      "legend_id": 60,
+      "legend_name": "EZIO",
+      "weapon_one": "Sword",
+      "weapon_two": "Orb",
+      "legend_src": "https://i.pinimg.com/736x/a2/3e/89/a23e8955a479d299254617e571976589.jpg"
+    },
+    {
+      "legend_id": 63,
+      "legend_name": "TEZCA",
+      "weapon_one": "Boots",
+      "weapon_two": "Fists",
+      "legend_src": "https://i.pinimg.com/736x/2c/59/8b/2c598b86933f32ef6d470c8871b1e5a7.jpg"
+    },
+    {
+      "legend_id": 62,
+      "legend_name": "THEA",
+      "weapon_one": "Boots",
+      "weapon_two": "RocketLance",
+      "legend_src": "https://i.pinimg.com/736x/fc/a4/9c/fca49c6ca454e0caac3180f6e8e1c967.jpg"
+    },
+    {
+      "legend_id": 17,
+      "legend_name": "RED RAPTOR",
+      "weapon_one": "Boots",
+      "weapon_two": "Orb",
+      "legend_src": "https://i.pinimg.com/736x/70/9d/5b/709d5b7744eb5591ab494827196c77f0.jpg"
+    },
+    {
+      "legend_id": 27,
+      "legend_name": "LOKI",
+      "weapon_one": "Katar",
+      "weapon_two": "Scythe",
+      "legend_src": "https://i.pinimg.com/736x/25/15/c3/2515c31d64f9bfc1c78670f43ec1ad86.jpg"
+    },
+    {
+      "legend_id": 61,
+      "legend_name": "SEVEN",
+      "weapon_one": "Spear",
+      "weapon_two": "Cannon",
+      "legend_src": "https://i.pinimg.com/736x/8f/3c/48/8f3c4887ad539c5eeb88ce281934a595.jpg"
+    },
+    {
+      "legend_id": 64,
+      "legend_name": "VIVI",
+      "weapon_one": "Boots",
+      "weapon_two": "Pistol",
+      "legend_src": "https://i.pinimg.com/736x/68/5c/f2/685cf242769260c8e38625abdd50c76e.jpg"
+    },
+    {
+      "legend_id": 65,
+      "legend_name": "IMUGI",
+      "weapon_one": "Axe",
+      "weapon_two": "Greatsword",
+      "legend_src": "https://i.pinimg.com/736x/59/92/df/5992df8d5d55b02d8ffc2d9a414b959e.jpg"
+    },
+    {
+      "legend_id": 66,
+      "legend_name": "KING ZUVA",
+      "weapon_one": "Hammer",
+      "weapon_two": "Boots",
+      "legend_src": "https://i.pinimg.com/736x/2c/54/51/2c54516129b133355cdb040bcb9116e0.jpg"
+    },
+    {
+      "legend_id": 67,
+      "legend_name": "PRIYA",
+      "weapon_one": "Chakram",
+      "weapon_two": "Sword",
+      "legend_src": "https://i.pinimg.com/736x/06/54/18/065418d5b1459dcc22846083694112be.jpg"
+    },
+    {
+      "legend_id": 68,
+      "legend_name": "RANSOM",
+      "weapon_one": "Chakram",
+      "weapon_two": "Bow",
+      "legend_src": "https://i.pinimg.com/736x/f6/7c/41/f67c413da66f0d55c373054c70d955b5.jpg"
+    },
+    {
+      "legend_id": 69,
+      "legend_name": "LADY VERA",
+      "weapon_one": "Chakram",
+      "weapon_two": "Scythe",
+      "legend_src": "https://i.pinimg.com/736x/86/56/f1/8656f1f49ff092de6442d720ff7eb941.jpg"
+    },
+    {
+      "legend_id": 70,
+      "legend_name": "RUPTURE",
+      "weapon_one": "Katar",
+      "weapon_two": "RocketLance",
+      "legend_src": "https://cms.brawlhalla.com/c/uploads/2026/01/a__AnimationSplashArtRupture_Ready.png"
+    },
+    {
+      "legend_id": 71,
+      "legend_name": "AURUS",
+      "weapon_one": "Chakram",
+      "weapon_two": "Spear",
+      "legend_src": "https://cms.brawlhalla.com/c/uploads/2026/06/a__AnimationSplashArtGladiator.png"
+    },
+    {
+      "legend_id": 72,
+      "legend_name": "QINGHUA & BAOBAO",
+      "weapon_one": "Orb",
+      "weapon_two": "Cannon",
+      "legend_src": "https://cms.brawlhalla.com/c/uploads/2026/08/a__AnimationSplashArtQuinghua_Ready.png"
+    }
+  ]
+}
