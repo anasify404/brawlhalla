@@ -11,6 +11,8 @@
   --text: #ffffff;
   --text-muted: #a8b6c8;
 
+  --width: 345px;
+
   --border: #24405c;
 }
 
@@ -106,6 +108,7 @@ button:hover {
   padding: 10px;
   height: 150px;
   gap: 20px;
+  width: 100%;
   /* background-color: #111b2d; */
 }
 
@@ -114,7 +117,7 @@ button:hover {
   font-size: large;
   padding: 20px;
   height: 35px;
-  width: 400px;
+  width: var(--width);
   border: 1px solid var(--border);
 
   border-radius: 25px;
@@ -156,7 +159,7 @@ button:hover {
   justify-content: center;
   /* height: 300px; */
   flex: 1;
-  max-width: 450px;
+  max-width: var(--width);
   padding: 0 10px;
   border-radius: 15px;
   border: 1px solid var(--border);
@@ -164,7 +167,7 @@ button:hover {
 
 .playerContent {
   /* margin-top: 0; */
-  width: 450px;
+  width: var(--width);
   height: 35px;
   padding: 0 10px;
   display: flex;
@@ -178,16 +181,21 @@ button:hover {
 
 .stats {
   padding: 5px;
-  width: 450px;
+  width: var(--width);
   display: flex;
   align-items: center;
   justify-content: space-around;
+  /* overflow: hidden;  */
   font-size: larger;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .section1,
 .section2 {
   flex: 1;
+  width: 120px;
   gap: 10px;
   display: flex;
   padding-left: 60px;
@@ -195,6 +203,9 @@ button:hover {
   align-items: initial;
   justify-content: initial;
   /* border: 1px solid black; */
+  /* overflow: hidden; */
+  position: relative;
+  right: 5px;
 }
 
 .section1 p,
@@ -206,7 +217,7 @@ button:hover {
 }
 
 .winRateGraph {
-  width: 450px;
+  width: var(--width);
   height: 15px;
   /* background-color: #f3fdff; */
   display: flex;
@@ -220,7 +231,7 @@ button:hover {
   /* flex: 2; */
   background-color: green;
   height: 15px;
-  width: 300px;
+  width: 200px;
   border-radius: 0 0 0 15px;
 }
 
