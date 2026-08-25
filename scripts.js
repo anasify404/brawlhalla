@@ -3,39 +3,39 @@ const inputId = document.querySelector("#inputId");
 const playerNotFound = document.querySelector("#playerNotFound");
 const playerIdSection = document.querySelector("#playerIdSection");
 const playerTopLegends = document.querySelector("#playerTopLegends");
-const playerHeading = document.querySelector("#playerHeading");
-const legendHeading = document.querySelector("#legendHeading");
 
+let playerData = {};
+let legendsProfiles = [];
+let legendsData = [];
+let legendResultData = [];
 // playerIdSection.innerHTML = "";
 
-function getLegendProfiles() {
-  fetch(`https://api.brawlhalla.com/v1/static/legends`)
-    .then((resp) => {
-      return resp.json();
-    })
-    .then((data) => {
-      console.log(data);
-      let legendProfiles1 = data.legends;
-
-      // legendProfiles.legend_name = data.legend_name;
-      console.log(legendProfiles);
-    })
-    .catch((err) => {
-      console.log("404");
+function getLegendsResultData(lp, ld) {
+  legendResultData = ld.map((legend) => {
+    const profile = lp.find((item) => {
+      return item.legend_id === legend.legend_id;
     });
-  fetch(`https://api.brawlhalla.com/v1/static/legends?page=2`)
+    return {
+      ...legend,
+      ...profile,
+    };
+  });
+  console.log(legendResultData);
+
+  for (let i = 0; i < ld.length; i++) {
+    createLegendCard(legendResultData[i]);
+  }
+}
+function getLegendsProfiles() {
+  fetch(`./data/legends.json`)
     .then((resp) => {
       return resp.json();
     })
     .then((data) => {
-      console.log(data);
-      let legendProfiles2 = data.legends;
-
-      // legendProfiles.legend_name = data.legend_name;
-      console.log(legendProfiles2);
+      legendsProfiles = data.legends;
     })
     .catch((err) => {
-      console.log("404");
+      console.log(err);
     });
 }
 
@@ -45,7 +45,6 @@ function getData(id) {
       return resp.json();
     })
     .then((data) => {
-      let playerData = {};
       playerData.brawlhalla_id = data.brawlhalla_id;
       playerData.name = data.name;
       playerData.games = data.games;
@@ -53,12 +52,16 @@ function getData(id) {
       playerData.losses = data.games - data.wins;
       playerData.winRate = ((data.wins / data.games) * 100).toFixed(2);
       // console.log(playerData);
-      let legendsData = data.legends.slice(0, 5);
-      // console.log(legendsData);
-      showCard(playerData, legendsData);
+      console.log(data.legends.sort((a, b) => b.games - a.games));
+
+      legendsData = data.legends.sort(function (a, b) {
+        b.games - a.games;
+      }); //sorted array chahiye descending order of games
+      console.log(legendsData);
+      showCard(playerData, legendsData, legendsProfiles);
     })
     .catch((err) => {
-      (consolv, e.log(err));
+      console.log(err);
       if (playerNotFound.classList.contains("toggle")) {
         playerNotFound.classList.remove("toggle");
       }
@@ -68,6 +71,10 @@ function getData(id) {
 }
 
 function createPlayerCard(obj) {
+  const playerHeading = document.createElement("h2");
+  playerHeading.classList.add("heading");
+  playerHeading.textContent = "Player Stats:";
+
   const playerCard = document.createElement("div");
   playerCard.classList.add("playerCard");
 
@@ -131,51 +138,52 @@ function createPlayerCard(obj) {
   winRateGraph.append(win, loss);
 
   playerCard.append(playerContent, stats, winRateGraph);
-  playerIdSection.append(playerCard);
+  playerIdSection.append(playerHeading, playerCard);
 }
 
-function createLegendCard(obj) {
+//lrd contains two objects legend and profile
+function createLegendCard(lrd) {
   const legendCard = document.createElement("div");
   legendCard.classList.add("legendCard");
 
   const legendPfp = document.createElement("img");
   legendPfp.classList.add("legendPfp");
-  legendPfp.src = "https://placehold.co/300x300";
-  legendPfp.alt = obj.legend_id;
+  legendPfp.src = lrd.legend_src;
+  legendPfp.alt = lrd.legend_id;
 
   const legendInfo = document.createElement("div");
   legendInfo.classList.add("legend-info");
 
   const legendName = document.createElement("h3");
   legendName.classList.add("legend-name");
-  legendName.textContent = `Legend: ${obj.legend_name}`;
+  legendName.textContent = `Legend: ${lrd.legend_name}`;
 
   const legendStats = document.createElement("div");
   legendStats.classList.add("legend-stats");
 
   const games = document.createElement("p");
-  games.textContent = `Games: ${obj.games}`;
+  games.textContent = `Games: ${lrd.games}`;
 
   const wins = document.createElement("p");
-  wins.textContent = `Wins: ${obj.wins}`;
+  wins.textContent = `Wins: ${lrd.wins}`;
 
   const winRate = document.createElement("p");
-  winRate.textContent = `Win Rate: ${((obj.wins / obj.games) * 100).toFixed(2)}`;
+  winRate.textContent = `Win Rate: ${((lrd.wins / lrd.games) * 100).toFixed(2)}`;
 
   const kos = document.createElement("p");
-  kos.textContent = `KOs: ${obj.kos}`;
+  kos.textContent = `KOs: ${lrd.kos}`;
 
   const spearKOs = document.createElement("p");
-  spearKOs.textContent = `weapon_one KOs:${obj.ko_weapon_one}`;
+  spearKOs.textContent = `${lrd.weapon_one} KOs:${lrd.ko_weapon_one}`;
 
   const lanceKOs = document.createElement("p");
-  lanceKOs.textContent = `weapon_two KOs:${obj.ko_weapon_two}`;
+  lanceKOs.textContent = `${lrd.weapon_two} KOs:${lrd.ko_weapon_two}`;
 
   const falls = document.createElement("p");
-  falls.textContent = `Falls: ${obj.falls}`;
+  falls.textContent = `Falls: ${lrd.falls}`;
 
   const suicides = document.createElement("p");
-  suicides.textContent = `Suicides: ${obj.suicides}`;
+  suicides.textContent = `Suicides: ${lrd.suicides}`;
 
   legendStats.append(
     games,
@@ -193,22 +201,14 @@ function createLegendCard(obj) {
   playerTopLegends.append(legendCard);
 }
 //pd - playerdata and ld is legendsdata
-function showCard(pd, ld) {
+function showCard(pd, ld, lp) {
   playerIdSection.innerHTML = "";
   playerTopLegends.innerHTML = "";
 
-  if (
-    playerHeading.classList.contains("toggle") &&
-    legendHeading.classList.contains("toggle")
-  ) {
-    playerHeading.classList.remove("toggle");
-    legendHeading.classList.remove("toggle");
-  }
+  getLegendsResultData(lp, ld);
+
   createPlayerCard(pd);
 
-  for (let i = 0; i < ld.length; i++) {
-    createLegendCard(ld[i]);
-  }
   if (playerNotFound.classList.contains("toggle")) {
     playerNotFound.classList.add("toggle");
   }
@@ -216,6 +216,11 @@ function showCard(pd, ld) {
 
 form.addEventListener("submit", (evt) => {
   evt.preventDefault();
-  getLegendProfiles();
+  getLegendsProfiles();
+
+  if (!playerNotFound.classList.contains("toggle"))
+    playerNotFound.classList.add("toggle");
+
   getData(inputId.value);
+  form.reset();
 });
