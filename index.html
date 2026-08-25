@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brawlhallah Roaster</title>
+    <link
+      rel="shortcut icon"
+      href="https://i.pinimg.com/736x/73/5d/28/735d2817dad034b3c6fbac02f5cbc03e.jpg"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -35,47 +40,27 @@
             inputmode="numeric"
             pattern="[0-9]*"
             placeholder="e.g. 137xxx39"
+            required
           />
           <!-- <div> -->
           <button class="primary" type="submit">Search</button>
-          <!-- <button class="secondary">AI Roast🔥</button> -->
+          <!-- <button class="secondary">AI Roast</button> -->
+          <h3>(AI Roaster Soon...🔥)</h3>
           <!-- </div> -->
         </form>
       </div>
 
-      <div id="playerNotFound" class="playerNotFound toggle">
-        <p>404</p>
+      <div id="playerNotFound" class="toggle playerNotFound">
+        <p><span>404</span></p>
         <p>Player Not Found</p>
-      </div>
-      <div
-        id="playerHeading"
-        class="toggle"
-        style="
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin: 10px;
-        "
-      >
-        <h2>Player Stats:</h2>
       </div>
 
       <div id="playerIdSection" class="playerIdSection"></div>
-      <div
-        id="legendHeading"
-        class="toggle"
-        style="
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin-top: 10px;
-        "
-      >
-        <h2>Top 5 Legends</h2>
-      </div>
+
       <div class="playerTopLegends" id="playerTopLegends"></div>
+
+      <div class="instructions"></div>
     </main>
     <script src="scripts.js"></script>
   </body>
 </html>
-
