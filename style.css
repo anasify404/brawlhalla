@@ -292,7 +292,7 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 10px;
+  margin: 0 auto;
   color: var(--primary);
 }
 
@@ -364,3 +364,4 @@ footer {
 .aiRoastHeading {
   color: var(--primary);
 }
+
