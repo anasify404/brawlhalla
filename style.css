@@ -55,10 +55,10 @@ nav h1 {
 }
 
 button {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: bold;
-  height: 30px;
-  width: 110px;
+  height: 35px;
+  width: 120px;
   border: none;
   border-radius: 20px;
   cursor: pointer;
@@ -89,25 +89,37 @@ button:hover {
 .heroSection {
   width: 100%;
   height: 50vh;
-  gap: 5px;
+  gap: 3px;
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-top: 35px;
+  position: relative;
+  top: 5px;
+  padding-top: 45px;
   background-image: url(https://i.pinimg.com/1200x/5b/e5/68/5be568861fe5fa90b37c6f2113f1daa6.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  /* border: 2px solid var(--border); */
 }
 
+.heroSection h2 {
+  color: var(--primary);
+}
+.heroSection a {
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 17px;
+  color: var(--text-muted);
+}
 .input {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   padding: 10px;
-  height: 150px;
+  height: 200px;
   gap: 20px;
   width: 100%;
   /* background-color: #111b2d; */
@@ -144,8 +156,12 @@ button:hover {
   margin-top: -50px;
   /* margin-bottom: 20px; */
   height: 90px;
+  top: 5px;
   font-size: 25px;
   background-color: var(--border);
+  position: relative;
+
+  z-index: 7;
 }
 .playerNotFound span {
   font-size: 35px;
@@ -277,6 +293,7 @@ button:hover {
   align-items: center;
   justify-content: center;
   margin: 10px;
+  color: var(--primary);
 }
 
 .legendPfp {
@@ -316,6 +333,7 @@ button:hover {
 }
 
 .instructions {
+  background-color: var(--surface);
 }
 
 footer {
@@ -325,4 +343,24 @@ footer {
 
 #playerHeading1 {
   background-color: #00d9ff;
+}
+
+.aiRoastBtn {
+  background-color: var(--secondary);
+}
+
+.aiRoastCard {
+  margin: 10px auto;
+  padding: 15px;
+  background-color: var(--surface);
+  width: 90%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  /* align-items: center; */
+  justify-content: center;
+}
+.aiRoastHeading {
+  color: var(--primary);
 }
