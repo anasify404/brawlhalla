@@ -44,8 +44,9 @@
           />
           <!-- <div> -->
           <button class="primary" type="submit">Search</button>
+          <!-- <a href="#instructions">What is my Player Id?</a> -->
           <!-- <button class="secondary">AI Roast</button> -->
-          <h3>(AI Roaster Soon...🔥)</h3>
+          <!-- <h3>(AI Roaster Soon...🔥)</h3> -->
           <!-- </div> -->
         </form>
       </div>
@@ -55,12 +56,28 @@
         <p>Player Not Found</p>
       </div>
 
+      <div id="fetchLDataNotify" class="toggle">
+        <h2 class="heading">FETCHING LEGENDS' DATA...</h2>
+      </div>
+
+      <div id="fetchPDataNotify" class="toggle">
+        <h2 class="heading">FETCHING PLAYER'S DATA...</h2>
+      </div>
+
       <div id="playerIdSection" class="playerIdSection"></div>
+      <!-- <div class="aiRoastCard" id="aiRoastCard"></div> -->
 
       <div class="playerTopLegends" id="playerTopLegends"></div>
+      </div>
 
-      <div class="instructions"></div>
+      <div id="fetchPRoastNotify" class="toggle">
+        <h2 class="heading">LOADING...</h2>
+      </div>
+      <div id="instructions">
+        <!-- <h2>here ar ethe instructions</h2> -->
+      </div>
     </main>
+    <script scr="https://js.puter.com/v2"></script>
     <script src="scripts.js"></script>
   </body>
 </html>
