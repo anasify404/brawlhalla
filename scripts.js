@@ -3,11 +3,17 @@ const inputId = document.querySelector("#inputId");
 const playerNotFound = document.querySelector("#playerNotFound");
 const playerIdSection = document.querySelector("#playerIdSection");
 const playerTopLegends = document.querySelector("#playerTopLegends");
-
+const fetchPDataNotify = document.querySelector("#fetchPDataNotify");
+const fetchLDataNotify = document.querySelector("#fetchLDataNotify");
+// const fetchPRoastNotify = document.querySelector("#fetchPRoastNotify");
+let aiRoastResponse;
 let playerData = {};
 let legendsProfiles = [];
 let legendsData = [];
 let legendResultData = [];
+// const prompt =
+//   "You are a Brawlhalla player-stat roast generator. Your job is to roast the player based ONLY on the statistics provided. Rules: - Be funny, clever, competitive, and slightly savage. - Keep it playful, not genuinely hateful or offensive. - Identify the most embarrassing or interesting patterns in the stats. - Use specific numbers from the data whenever possible. - Do not invent statistics, achievements, or facts. - Do not explain the statistics like a report. - Write like a Brawlhalla player roasting another player. - Maximum 3 sentences. - No emojis. - No generic jokes that could apply to anyone. - If the stats are actually impressive, roast them by exaggerating their try-hard/pro-player behavior instead.";
+
 // playerIdSection.innerHTML = "";
 
 function getLegendsResultData(lp, ld) {
@@ -27,19 +33,26 @@ function getLegendsResultData(lp, ld) {
   }
 }
 function getLegendsProfiles() {
+  fetchLDataNotify.classList.remove("toggle");
+
   fetch(`./data/legends.json`)
     .then((resp) => {
       return resp.json();
     })
     .then((data) => {
       legendsProfiles = data.legends;
+      fetchLDataNotify.classList.add("toggle");
     })
     .catch((err) => {
+      fetchLDataNotify.classList.add("toggle");
+
       console.log(err);
     });
 }
 
 function getData(id) {
+  fetchPDataNotify.classList.remove("toggle");
+
   fetch(`https://api.brawlhalla.com/v1/player/stats?brawlhalla_id=${id}`)
     .then((resp) => {
       return resp.json();
@@ -58,9 +71,11 @@ function getData(id) {
         b.games - a.games;
       }); //sorted array chahiye descending order of games
       console.log(legendsData);
+      fetchPDataNotify.classList.add("toggle");
       showCard(playerData, legendsData, legendsProfiles);
     })
     .catch((err) => {
+      fetchPDataNotify.classList.add("toggle");
       console.log(err);
       if (playerNotFound.classList.contains("toggle")) {
         playerNotFound.classList.remove("toggle");
@@ -74,6 +89,10 @@ function createPlayerCard(obj) {
   const playerHeading = document.createElement("h2");
   playerHeading.classList.add("heading");
   playerHeading.textContent = "Player Stats:";
+
+  // const aiRoastBtn = document.createElement("button");
+  // aiRoastBtn.classList.add("aiRoastBtn");
+  // aiRoastBtn.textContent = "AI Roast Me!";
 
   const playerCard = document.createElement("div");
   playerCard.classList.add("playerCard");
@@ -139,9 +158,71 @@ function createPlayerCard(obj) {
 
   playerCard.append(playerContent, stats, winRateGraph);
   playerIdSection.append(playerHeading, playerCard);
+  // playerIdSection.append(playerHeading, playerCard, aiRoastBtn);
+
+  // let count = 0;
+
+  // aiRoastBtn.addEventListener("click", () => {
+  //   console.log("clicked!");
+  //   count++;
+  //   if (count < 2) aiRoast(prompt, playerData, legendResultData);
+  // });
 }
 
-//lrd contains two objects legend and profile
+//lrd contains two objects legend and profile, pmt prompt
+
+// async function aiRoast(pmt, pd, lrd) {
+//   console.log("loading data...");
+//   fetchPRoastNotify.classList.remove("toggle");
+//   try {
+//     const resp = await fetch(
+//       `https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent`,
+//       {
+//         method: "POST",
+//         headers: {
+//           "Content-Type": "application/json",
+//           "X-goog-api-key":
+//             "API_KEY",
+//         },
+//         body: JSON.stringify({
+//           contents: [
+//             {
+//               parts: [
+//                 {
+//                   text: `${pmt}: Player Data${pd}, Legends' Data: ${lrd}`,
+//                 },
+//               ],
+//             },
+//           ],
+//         }),
+//       },
+//     );
+//     const data = await resp.json();
+//     console.log(data);
+//     aiRoastResponse = data.candidates[0].content.parts[0].text;
+//     fetchPRoastNotify.classList.add("toggle");
+//     createRoastCard(aiRoastResponse);
+//   } catch {
+//     console.log("Error: GEMINI");
+//   }
+// }
+
+// function createRoastCard(roast) {
+//   const aiRoastCard = document.createElement("div");
+//   aiRoastCard.classList.add("aiRoastCard");
+
+//   const aiRoastHeading = document.createElement("h2");
+//   aiRoastHeading.classList.add("aiRoastHeading");
+//   aiRoastHeading.textContent = "AI ROAST:";
+
+//   const aiRoastContent = document.createElement("p");
+
+//   aiRoastContent.textContent = roast;
+
+//   aiRoastCard.append(aiRoastHeading, aiRoastContent);
+//   playerIdSection.after(aiRoastCard);
+// }
+
 function createLegendCard(lrd) {
   const legendCard = document.createElement("div");
   legendCard.classList.add("legendCard");
